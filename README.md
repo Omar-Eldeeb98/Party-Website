@@ -10,6 +10,7 @@
 # Live Demo :
 
 # Screenshots:
+<img src = "screenshots/laptop.gif" alt = "laptop" width = "400" height = "200"> ,<img src = "screenshots/mobile.gif" alt = "laptop" width = "170" height = "350">
 
 
 # Tools :
