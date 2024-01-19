@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    /* position: relative; */
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+
+}
+
+#sideBar {
+
+    position: fixed;
+    top: 25%;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    align-items: flex-start;
+    white-space: nowrap;
+}
+
+#sideBar .ay7aga {
+    display: none;
+}
+
+#sideBar .sideBox {
+    background-color: #2b2b2b;
+    padding: 8px;
+    border-bottom-left-radius: 4px;
+
+
+}
+
+#sideBar .sideBox h4 {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+#sideBar .sideBox hr {
+    color: #ED6020;
+    border-width: 2px;
+}
+
+#sideBar .sideBox h6 {
+    color: white;
+}
+
+#sideBar .sideBox span.box_Color {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#sideBar .sideBox span.box_Color:hover {
+    transform: scale(1.1);
+}
+
+.con__ {
+    background-color: #ED6020;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+#sideBar i {
+    padding: 8px;
+    cursor: pointer;
+    color: white;
+}
+
+#sideBar .sideBox img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 6px;
+}
+
+#sideBar .sideBox img:hover {
+    transform: scale(1.1);
+}
+
+/* .oe57 {
+    width: fit-content;
+    color: #ED6020;
+    letter-spacing: 1px;
+    background-color: white;
+    border-radius: 3px;
+    font-size: 8px;
+    padding: 4px 8px;
+    white-space: nowrap;
+    font-weight: bold;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin-bottom: 6px;
+}
+
+.oe57:hover {
+    color: white;
+    background-color: #ED6020;
+} */
+
+/*!========================================= loader ================================================================*/
+.loading {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #000;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .loader:before , .loader:after{
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    inset: 0;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3) inset;
+  }
+  .loader:after {
+    box-shadow: 0 2px 0 #FF3D00 inset;
+    animation: rotate 2s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {  transform: rotate(0)}
+    100% { transform: rotate(360deg)}
+  }
+
+/*!========================================= loader ================================================================*/
+
+/*!============================================== custome scrollbar =============================================*/
+
+body {
+    --sb-track-color: #272a2b;
+    --sb-thumb-color: #ED6020;
+    --sb-size: 20px;
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 12px;
+
+
+}
+
+/*!============================================== custome scrollbar =============================================*/
+
+/*&============================================== Home section =============================================*/
+#home {
+    position: relative;
+    height: 90vh;
+    background-image: url("../assets/images/bg2.jpg");
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 70px;
+
+}
+
+#home #sideMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    display: none;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.805);
+    text-align: start;
+    padding-top: 50px;
+
+}
+
+#home #sideMenu a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 20px 10px;
+    font-size: 22px;
+    font-weight: bold;
+    transition: all 0.5s;
+
+}
+
+#home #sideMenu a.close_button {
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+#home #sideMenu a:hover {
+    color: #ed6020;
+}
+
+#home .layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.29);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .layer .open_slider_span {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    left: 8px;
+}
+
+#home .home_caption {
+    transition: all 0.5s;
+}
+
+#home .home_caption h1 {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+}
+
+#home .home_caption h6 {
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: white;
+}
+
+
+@media (max-width: 575.98px) {
+    #home .home_caption h1 {
+        font-size: 35px;
+    }
+}
+
+/*&============================================== Home section =============================================*/
+
+
+
+/*&============================================== Singers section =============================================*/
+#singers_section {
+    margin-bottom: 50px;
+}
+
+#singers_section .container h2 {
+    background-color: #ed6120bb;
+
+    margin-inline: auto;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-block: 0;
+    margin-bottom: 4px;
+}
+
+#singers_section .container p {
+    margin-block: 0;
+    padding: 8px;
+    background-color: var(--bs-gray-900);
+    color: white;
+    letter-spacing: 1px;
+    line-height: 24px;
+    display: none;
+    border-radius: 8px;
+    margin-bottom: 4px;
+
+}
+
+/*&============================================== Singers section =============================================*/
+
+/*&============================================== timer section =============================================*/
+#count_down_section {
+    margin-bottom: 70px;
+    min-height: 400px;
+    background-image: url(../assets/images/bg3.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#count_down_section .container {
+    min-height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#count_down_section .container .row {
+    width: 100%;
+
+}
+
+#count_down_section .container .row .time_container {
+    border: 2px solid white;
+    padding: 20px 10px;
+    color: white;
+}
+
+#count_down_section .container .row .time_container span {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#count_down_section .container .row p {
+    margin-top: 5px;
+    background-color: #ed6120bb;
+    border: 2px solid white;
+    color: white;
+    padding: 8px;
+    font-size: 22px;
+}
+
+@media (max-width: 575.98px) {
+    .col-md-3 {
+        width: 50%;
+    }
+}
+
+/*&============================================== timer section =============================================*/
+
+/*&============================================== contact section =============================================*/
+#contact .container {
+    margin-bottom: 30px;
+}
+
+#contact .container h2 {
+    color: #444444;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#contact .container p {
+    color: #444444;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#contact .container .left_section h5 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#contact .container .left_section p {
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 1.7rem;
+    font-size: 17px;
+}
+
+#contact .container .left_section .container_ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#contact .container .left_section .container_ i {
+    color: #ed6020;
+    margin-inline-end: 20px;
+}
+
+.social_media_container_ {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    width: 50%;
+    margin-top: 40px;
+
+}
+
+.social_media_container_ .social_media_icon_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.social_media_container_ .social_media_icon_container:hover {
+    background-color: #ed6020;
+    border: none;
+    color: white;
+}
+
+.social_media_container_ .social_media_icon_container i {
+    font-size: 25px;
+}
+
+
+#contact .container .right_section input {
+    margin-block: 30px;
+    padding: 12px;
+}
+
+#contact .container .right_section textarea {
+    height: 170px;
+    resize: none;
+}
+
+#contact .container .right_section div {
+    color: #444;
+    font-weight: bold;
+}
+
+#contact .container .right_section input:focus {
+    box-shadow: none;
+    border-color: #ed6020;
+}
+
+#contact .container .right_section textarea:focus {
+    box-shadow: none;
+    border-color: #ed6020;
+}
+
+#char_counter {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    background-color: #000000c7;
+    padding: 2px;
+    border-radius: 8px;
+    color: #ED6020;
+}
+
+.submitted_btn {
+    background-color: #ED6020;
+    color: white !important;
+    transition: padding 0.5s;
+}
+
+.submitted_btn:hover {
+    padding-inline: 50px !important;
+}
+
+.btn:hover {
+    background-color: #ed6120d1 !important;
+}
+
+@media (max-width: 575.98px) {
+
+    /* .social_media_container_ .social_media_icon_container {
+        width: 32px;
+        height: 32px;
+    }
+    .social_media_container_ .social_media_icon_container i {
+        font-size: 20px;
+    } */
+    .social_media_container_ {
+        width: 100%;
+    }
+}
+
+/*&============================================== contact section =============================================*/
+
+/*&============================================== footer section =============================================*/
+#footer .container p {
+    font-size: 12px !important;
+}
+
+#footer .container p span {
+    background-color: orange;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    transition: all 0.3s;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#footer .container p span:hover {
+    background-color: #fff;
+    color: #ED6020;
+
+}
+
+/*&============================================== footer section =============================================*/
